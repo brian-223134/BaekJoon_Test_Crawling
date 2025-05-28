@@ -48,7 +48,7 @@ problem_1000/
 
 ## 동작 방식
 - requests로 HTML을 받아올 때 User-Agent를 설정하여 접근 차단 방지
-- BeautifulSoup으로 <pre id="sample-input-1">, <pre id="sample-output-1"> 태그를 추출
+- BeautifulSoup으로 `<pre id="sample-input-1">`, `<pre id="sample-output-1">` 태그를 추출
 - 정규표현식으로 sample-input-\d+, sample-output-\d+을 매칭
 - 파일 이름은 문제 번호를 기준으로 problem_<문제번호>/input{i}.txt, output{i}.txt로 저장
 
