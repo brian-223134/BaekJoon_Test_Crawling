@@ -27,23 +27,17 @@ pip install requests beautifulsoup4
 ## 🚀사용 방법
 
 ```bash
-python crawl.py https://www.acmicpc.net/problem/1000
+python crawl_UI.py
 ```
 
 - 실행 후 아래와 같은 디렉토리 구조로 파일이 생성됩니다:
 ```bash
+dist
+├── problem_1000/
+
 problem_1000/
 ├── input1.txt
 └── output1.txt
-```
-
-- test case가 여러개인 경우
-```bash
-problem_1000/
-├── input1.txt
-├── output1.txt
-├── input2.txt
-└── output2.txt
 ```
 
 ## 동작 방식
@@ -56,3 +50,4 @@ problem_1000/
 - 문제 구조가 변경되면 정규표현식 부분을 수정해야 할 수 있습니다.
 - 예제 개수가 일치하지 않는 경우 (inputN, outputM의 N ≠ M)는 짝이 맞는 개수만 저장됩니다.
 - 백준 서버 구조나 robots.txt 정책이 변경되면 작동하지 않을 수 있습니다.
+- crawl.py는 non-UI 버전의 crawling 실행 프로그램입니다. (terminal에서 python crawl.py [문제 url] 입력시 동일하게 동작)
