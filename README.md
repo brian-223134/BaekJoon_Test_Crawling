@@ -38,7 +38,7 @@ pyinstaller --onefile --windowed crawl_UI.py
 
 ## 🚀사용 방법
 
-- 실행 후 아래와 같은 디렉토리 구조로 파일이 생성됩니다:
+- .exe 빌드 명령 실행 후 아래와 같은 디렉토리 구조로 파일이 생성됩니다:
 ```bash
 project_root/
 ├── dist/
@@ -46,7 +46,9 @@ project_root/
 ├── build/
 ├── crawl_UI.spec
 ```
-- test case도 exe 파일과 동일한 directory에 생성됩니다.
+- 이후 dist directory에서 .exe 파일을 직접 실행하면 프로그램이 실행됩니다.
+- ![image](https://github.com/user-attachments/assets/a3ad4594-496d-49e0-aa2b-6e267e07922d)
+- 참고: test case도 exe 파일과 동일한 directory에 생성됩니다.
 
 ## 동작 방식
 - requests로 HTML을 받아올 때 User-Agent를 설정하여 접근 차단 방지
