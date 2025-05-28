@@ -1,0 +1,57 @@
+# =====================
+# Python Bytecode Cache
+# =====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# =====================
+# Virtual Environment
+# =====================
+venv/
+.venv/
+.env/
+
+# =====================
+# Editor Config
+# =====================
+.vscode/
+.idea/
+
+# =====================
+# PyInstaller Build Artifacts
+# =====================
+build/
+dist/
+*.spec
+
+# =====================
+# Executables
+# =====================
+*.exe
+*.dll
+*.so
+
+# =====================
+# Temporary / Log Files
+# =====================
+*.log
+*.tmp
+
+# =====================
+# OS System Files
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Crawled Example Outputs (Optional)
+# =====================
+problem_*/
+
+# =====================
+# Misc
+# =====================
+# Jupyter or notebook outputs
+.ipynb_checkpoints/
