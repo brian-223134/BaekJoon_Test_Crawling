@@ -20,25 +20,33 @@
 - 아래 패키지 설치 필요
 
 ```bash
-pip install requests beautifulsoup4
+pip install requests beautifulsoup4 pyinstaller
+```
+---
+
+## 🛠 `.exe` 직접 생성하기 (PyInstaller 사용)
+
+이 프로젝트는 `.exe` 실행 파일을 Git에 포함하지 않으며, 사용자가 직접 빌드해야 합니다.  
+아래의 안내에 따라 `dist/` 폴더를 생성하고 실행 파일을 만들 수 있습니다.
+
+### 🚀 .exe 빌드 명령
+- 아래의 명령을 terminal에 입력하면 GUI 용 exe 파일이 생성됩니다.
+```bash
+pyinstaller --onefile --windowed crawl_UI.py
 ```
 ---
 
 ## 🚀사용 방법
 
-```bash
-python crawl_UI.py
-```
-
 - 실행 후 아래와 같은 디렉토리 구조로 파일이 생성됩니다:
 ```bash
-dist
-├── problem_1000/
-
-problem_1000/
-├── input1.txt
-└── output1.txt
+project_root/
+├── dist/
+│   └── crawl_UI.exe     ← 여기서 실행 가능
+├── build/
+├── crawl_UI.spec
 ```
+- test case도 exe 파일과 동일한 directory에 생성됩니다.
 
 ## 동작 방식
 - requests로 HTML을 받아올 때 User-Agent를 설정하여 접근 차단 방지
