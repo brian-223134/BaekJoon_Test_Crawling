@@ -21,21 +21,21 @@
 
 ```bash
 pip install requests beautifulsoup4
-
+```
 ---
 
 ## 🚀사용 방법
 
 ```bash
 python crawl.py https://www.acmicpc.net/problem/1000
-```bash
+```
 
 - 실행 후 아래와 같은 디렉토리 구조로 파일이 생성됩니다:
 ```bash
 problem_1000/
 ├── input1.txt
 └── output1.txt
-```bash
+```
 
 - test case가 여러개인 경우
 ```bash
@@ -44,7 +44,7 @@ problem_1000/
 ├── output1.txt
 ├── input2.txt
 └── output2.txt
-```bash
+```
 
 ## 동작 방식
 - requests로 HTML을 받아올 때 User-Agent를 설정하여 접근 차단 방지
